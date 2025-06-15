@@ -21,4 +21,4 @@ Replace `<your-username>` and `<your-repo-name>` with your GitHub username and r
 Note: Any time you push updates to your `index.html` or other files, the site will auto-update within a minute or two.
 
 
-My website: https://DonotDonut.github.io/Caole_Portfolio
+My website: https://DonotDonut.github.io/TimCaole_Portfolio
