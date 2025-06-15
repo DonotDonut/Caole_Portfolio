@@ -42,39 +42,26 @@ footer {
   width: 100%;
 }
 
-.main-container {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  align-items: flex-start;
+outerDiv {
+    background-color: #006699;
+    color: #fff;
+    height: 400px;
+    width: 600px;
+    margin: 0px auto;
+    padding: 5px;
 }
 
-.sidebar {
-  width: 200px;
-  background-color: #f5f5f5;
-  border-right: 1px solid #ccc;
-  padding: 1rem;
-  height: 100%;
+left-content {
+    background-color: #efefef;
+    color: #000;
+    height: 400px;
+    width: 48%;
+    float: left;
 }
-
-.sidebar ul li {
-  margin: 12px 0;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.sidebar a:hover {
-  color: #007acc;
-}
-
-.content {
-  flex: 1;
-  padding: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+right-content {
+    background-color: #efefef;
+    color: #000;
+    height: 400px;
+    width: 48%;
+    float: right;
 }
