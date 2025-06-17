@@ -4,51 +4,41 @@
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- conncets the html to the css file for styling -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- connects the HTML to the CSS file for styling -->
 </head>
 <body>
 
   <header>
-    <h1>HEllo World </h1>
-    <p>Aspiring Engineer | Python Enthusiast | Creative Thinker</p>
+    <nav class="navigation"> <!-- navigation to other webpages -->
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a> 
+      <a href="index.html">About</a>
+      <a href="blog.html">Blog</a> 
+      <a href="contact.html">Contact</a> 
+    </nav>
+    <h1>CONTACT ME</h1>
   </header>
-
-  <div class="main-wrapper">
-    <div class="main-container">
-      
-      <!-- Left: Navigation -->
-      <div class = "left-content">
-
-        <nav class="sidebar">
-          <ul style="list-style: none; padding: 0; margin: 0;">
-            <li> <a href="experience.html">Experience</a> </li>
-            <li> <a href="schooling.html">Schooling</a> </li>
-            <li> <a href="index.html">About</a> </li>
-            <li> <a href="blog.html">Blog</a> </li>
-            <li> <a href="license.html">License</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
-          </ul>
-        </nav>
-      
-      </div>
-
-          <!-- Right: Content -->
-      <div class = "right-content">
-        <p> 
-          Right Side
-          Testing
-        </p>
-
-
-      </div>
-
-    </div>
-  </div>
   
+  <div class="main-wrapper"> 
+    
+  </div>
 
-  <footer>
-    Copyright &copy; 2025 Timothy Caole | All rights reserved
+
+  <footer> 
+    &copy; 2025 Timothy Caole | All rights reserved
   </footer>
+
+    <!-- highlight current nav link -->
+  <script>
+    const links = document.querySelectorAll('.navigation a');  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 
 </body>
 </html>

@@ -4,12 +4,12 @@
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- connects the HTML to the CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
   <header>
-    <nav class="navigation"> <!-- navigation to other webpages -->
+    <nav class="navigation">
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a> 
       <a href="index.html">About</a>
@@ -19,8 +19,8 @@
     <h1>CONTACT ME</h1>
   </header>
   
-  <div class="main-wrapper"> 
-    <div id="contact">
+  <main class="main-wrapper"> 
+    <section id="contact">
       <h1>LET'S TALK</h1>
 
       <form id="contact-form" action="#" method="post"> 
@@ -41,34 +41,36 @@
 
         <button type="submit">Send</button>
       </form>
-    </div>
+    </section>
 
-    <div id="socials"> 
-      <!-- LinkedIn social -->
+    <aside id="socials"> 
+      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/timothy-john-caole/" target="_blank" rel="noopener noreferrer">
         <img src="Social Logos/Linkedin Logo.jpg" alt="LinkedIn Logo" class="social-logo">
       </a>
 
-      <!-- GitHub social -->
+      <!-- GitHub -->
       <a href="https://github.com/DonotDonut" target="_blank" rel="noopener noreferrer"> 
         <img src="Social Logos/Github Logo.png" alt="GitHub Logo" class="social-logo">
       </a>
-    </div>
-  </div>
+    </aside>
+  </main>
 
   <footer> 
     &copy; 2025 Timothy Caole | All rights reserved
   </footer>
 
-    <!-- highlight current nav link -->
+  <!-- Highlight current nav link -->
   <script>
-    const links = document.querySelectorAll('.navigation a');  
-    const currentPage = window.location.pathname.split("/").pop();  
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('.navigation a');  
+      const currentPage = window.location.pathname.split("/").pop();  
 
-    links.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
+      links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
     });
   </script>
 
