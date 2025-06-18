@@ -16,6 +16,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 2rem 0;
+  height: 10%;
 }
 
 /*  Navigation Bar */
@@ -58,25 +59,7 @@ header {
   flex-wrap: nowrap;
 }
 
-.left-content,
-.right-content {
-  padding: 1rem;
-  background-color: #efefef;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.left-content {
-  width: 40%;
-}
-
-.right-content {
-  width: 60%;
-  text-align: left;
-}
 
 /*  Footer */
 footer {
@@ -89,10 +72,45 @@ footer {
 
 
 /* About Page ------------------------------------------ */
+
+.left-content,
+.right-content {
+  padding: 1rem;
+  background-color: #efefef;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-content {
+  width: 40%;
+  align-items: center;
+  
+}
+
+.right-content {
+  width: 60%;
+  text-align: left;
+  padding-right: 3rem;
+}
+
 #profile-pic{
   border-radius: 50%;
   max-width: 70%;
   max-height: auto;
+}
+
+#greetings{
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.25rem; /* reduce space*/
+}
+
+#titlecard {
+  text-align: right;
+  
 }
 
 /*  Contact Page ------------------------------------------ */
