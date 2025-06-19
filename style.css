@@ -99,19 +99,29 @@ footer {
   border-radius: 50%;
   max-width: 70%;
   max-height: auto;
+  margin-top: 5rem; /* reduce space*/
 }
 
 #greetings{
   font-size: 5rem;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 0.25rem; /* reduce space*/
+  margin: 0; /* reduce space*/
+}
+
+#mini-intro{
+  margin: 0; /* reduce space*/
 }
 
 #titlecard {
   text-align: right;
   
 }
+
+
+
+/* Project Page ------------------------------------------ */
+
 
 /*  Contact Page ------------------------------------------ */
 #contact {
