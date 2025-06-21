@@ -1,3 +1,13 @@
+<!--
+  Created by Timothy Caole 
+  Date: 6/18/2025 
+
+  Reference: 
+    https://thanhvtran.com/ 
+    /www.w3schools.com
+    ChatGPT 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,51 +26,72 @@
       <a href="blog.html">Blog</a> 
       <a href="contact.html">Contact</a> 
     </nav>
-    <h1>CONTACT ME</h1>
+    <h1>Projects</h1>
   </header>
   
-  <div class="main-wrapper"> 
-    <div id="contact">
-      <h1>LET'S TALK</h1>
+  <main class="main-wrapper"> 
+    <section class="main-container"> 
 
-      <form id="contact-form" action="#" method="post"> 
-        <label for="name"> 
-          First and Last name: <span class="required">*</span>
-        </label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
-
-        <label for="email"> 
-          Email Address: <span class="required">*</span>
-        </label>
-        <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <!-- left column-->
+      <div class="project-column"> 
         
-        <label for="message"> 
-          Message: <span class="required">*</span>
-        </label>
-        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+        <a href="project webpage/placeholder.html" target="_blank" rel="noopener noreferrer"> 
+          <div class="project-container">  
+            <img src="Images/project pics/placeholder 3.jpg" alt="GitHub Logo" class="project-image">
+            <div class="title-overlay"> Project #4 </div>
+          </div>
+        </a>
 
-        <button type="submit">Send</button>
-      </form>
-    </div>
+        <a href="project webpage/placeholder.html" target="_blank" rel="noopener noreferrer"> 
+          <div class="project-container">  
+            <img src="Images/project pics/placeholder 3.jpg" alt="GitHub Logo" class="project-image">
+            <div class="title-overlay"> Project #4 </div>
+          </div>
+        </a>
 
-    <div id="socials"> 
-      <!-- LinkedIn social -->
-      <a href="https://www.linkedin.com/in/timothy-john-caole/" target="_blank" rel="noopener noreferrer">
-        <img src="Social Logos/Linkedin Logo.jpg" alt="LinkedIn Logo" class="social-logo">
-      </a>
+      </div>
 
-      <!-- GitHub social -->
-      <a href="https://github.com/DonotDonut" target="_blank" rel="noopener noreferrer"> 
-        <img src="Social Logos/Github Logo.png" alt="GitHub Logo" class="social-logo">
-      </a>
-    </div>
-  </div>
+      <!-- middle column-->
+      <div class="project-column"> 
+
+        <a href="project webpage/placeholder.html" target="_blank" rel="noopener noreferrer"> 
+          <div class="project-container">  
+            <img src="Images/project pics/placeholder 3.jpg" alt="GitHub Logo" class="project-image">
+            <div class="title-overlay"> Project #4 </div>
+          </div>
+        </a>
+      
+
+      </div>
+
+      <!-- right column-->
+      <div class="project-column"> 
+
+        <a href="project webpage/placeholder.html" target="_blank" rel="noopener noreferrer"> 
+          <div class="project-container">  
+            <img src="Images/project pics/placeholder 3.jpg" alt="GitHub Logo" class="project-image">
+            <div class="title-overlay"> Project #4 </div>
+          </div>
+        </a>
+
+        <a href="project webpage/placeholder.html" target="_blank" rel="noopener noreferrer"> 
+          <div class="project-container">  
+            <img src="Images/project pics/placeholder 3.jpg" alt="GitHub Logo" class="project-image">
+            <div class="title-overlay"> Project #4 </div>
+          </div>
+        </a>
+      
+
+      </div>
+    </section>
+  </main>
+
 
   <footer> 
     &copy; 2025 Timothy Caole | All rights reserved
   </footer>
 
-    <!-- highlight current nav link -->
+    <!-- highlight current nav link for teh current page -->
   <script>
     const links = document.querySelectorAll('.navigation a');  
     const currentPage = window.location.pathname.split("/").pop();  
