@@ -30,20 +30,50 @@
   </header>
   
   <main class="main-wrapper"> 
-    <section class="main-container"> 
-      <section class="left-content"> 
-        <img src="Images/Timothy Caole Pfp.jpg" alt="Profile pcture " id="profile-pic">
+  
 
-      </section>
+    <div class="filter-buttons">
+      <button data-category="all" class="active">All</button>
+      <button data-category="education">Education</button>
+      <button data-category="license">License</button>
+      <button data-category="experience">Experience</button>
+    </div>
+      
+    <div class="resume-item" data-category="education" data-date="2019">
+      <h3>Bachelor of Science in Computer Science</h3>
+      <div class="meta">University Name – City, State | 2015 – 2019</div>
+      <p>Focused on software development, data structures, and computer architecture.</p>
+    </div>
 
-      <section class="right-content"> 
-        <p id = "greetings"> Hello There </p> 
-        <p id = "mini-intro"> Weclome to my portfolio website</p>
-        <p> I am Co-Founder and CTO at SommerAI and a recent graduate of the University of Washington with a Bachelor's degree in Computer Engineering and Electrical Engineering. From designing and developing a telemetry app to constructing and wiring a model of the International Space Station (ISS) that responds to real-time movement. I am passionate about power systems, power electronics, machine learning and artificial intelligence, renewable energy, and developing medical devices.</p>
-        <p id = "titlecard"> Timothy Caole , Electrical Student</p>
+    <div class="resume-item" data-category="license" data-date="2021">
+      <h3>Certified Web Developer</h3>
+      <div class="meta">Tech Certification Board | 2021</div>
+      <p>Credential verifying skills in front-end and back-end web technologies.</p>
+    </div>
 
-      </section>
-    </section>
+    <div class="resume-item" data-category="experience" data-date="present">
+      <h3>Software Engineer</h3>
+      <div class="meta">Tech Company – Remote | Jan 2020 – Present</div>
+      <p>Developed responsive web apps using React, Node.js, and REST APIs.</p>
+    </div>
+
+    <div class="resume-item" data-category="experience" data-date="2018">
+      <h3>Intern Developer</h3>
+      <div class="meta">Startup Inc – San Francisco, CA | Summer 2018</div>
+      <p>Assisted in building internal tools and automation scripts using Python.</p>
+    </div>
+
+    <div class="resume-item" data-category="education" data-date="2024">
+      <h3>Master’s in Data Science</h3>
+      <div class="meta">University XYZ – 2022 to 2024</div>
+    </div>
+
+    <div class="resume-item" data-category="experience" data-date="present">
+      <h3>Frontend Developer</h3>
+      <div class="meta">Company ABC – 2021 to Present</div>
+    </div>
+
+  
   </main>
 
 
@@ -61,6 +91,29 @@
         link.classList.add("active");
       }
     });
+
+
+
+     const buttons = document.querySelectorAll('.filter-buttons button');
+    const items = document.querySelectorAll('.resume-item');
+
+    function filterItems(category) {
+      items.forEach(item => {
+        const isMatch = category === 'all' || item.dataset.category === category;
+        item.style.display = isMatch ? 'block' : 'none';
+      });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        filterItems(button.dataset.category);
+      });
+    });
+
+    // Show all items on load
+    filterItems('all');
   </script>
 
 </body>
