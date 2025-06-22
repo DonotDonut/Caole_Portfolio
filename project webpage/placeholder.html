@@ -14,17 +14,17 @@
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css"> <!-- connects the HTML to the CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="../style.css"> <!-- connects the HTML to the CSS file for styling -->
 </head>
 <body>
 
   <header>
     <nav class="navigation"> <!-- navigation to other webpages -->
-      <a href="index.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a> 
-      <a href="blog.html">Blog</a> 
-      <a href="contact.html">Contact</a> 
+      <a href="../index.html">About</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../projects.html">Projects</a> 
+      <a href="../blog.html">Blog</a> 
+      <a href="../contact.html">Contact</a> 
     </nav>
     <h1>Sub project placeholder</h1>
   </header>
@@ -45,17 +45,8 @@
     &copy; 2025 Timothy Caole | All rights reserved
   </footer>
 
-    <!-- highlight current nav link -->
-  <script>
-    const links = document.querySelectorAll('.navigation a');  
-    const currentPage = window.location.pathname.split("/").pop();  
+   <script src="../script.js"> </script>  <!-- connects the HTML to javascript file for other functions -->
 
-    links.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
-    });
-  </script>
 
 </body>
 </html>

@@ -118,17 +118,9 @@
     &copy; 2025 Timothy Caole | All rights reserved
   </footer>
 
-    <!-- highlight current nav link for teh current page -->
-  <script>
-    const links = document.querySelectorAll('.navigation a');  
-    const currentPage = window.location.pathname.split("/").pop();  
+  <script src="script.js"> </script>  <!-- connects the HTML to javascript file for other functions -->
 
-    links.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
-    });
-  </script>
+
 
 </body>
 </html>
